@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bojk6mbslwk0e"
+
+[deps]
+
+files=["res://data/vocabulary.Mandarin.translation", "res://data/vocabulary.Pinyin.translation", "res://data/vocabulary.English.translation", "res://data/vocabulary.Category.translation"]
+
+source_file="res://data/vocabulary.csv"
+dest_files=["res://data/vocabulary.Mandarin.translation", "res://data/vocabulary.Pinyin.translation", "res://data/vocabulary.English.translation", "res://data/vocabulary.Category.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

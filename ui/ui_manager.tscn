@@ -1,0 +1,791 @@
+[gd_scene format=3 uid="uid://dbvigbd2w5xmq"]
+
+[ext_resource type="Script" uid="uid://5nrrh8bqsl5m" path="res://ui/ui_manager.gd" id="1_uimanager"]
+
+[node name="UIManager" type="Control" unique_id=45307181]
+editor_description = "Scene-root Control: viewport is the parent. Warning is normal. Children still layout under this node."
+custom_minimum_size = Vector2(720, 1280)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uimanager")
+
+[node name="Background" type="ColorRect" parent="." unique_id=783681286]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TitleCard" type="Control" parent="." unique_id=968065485]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="TitleCard" unique_id=98634625]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 56
+
+[node name="Layout" type="VBoxContainer" parent="TitleCard/Margin" unique_id=1721214617]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="TopSpacer" type="Control" parent="TitleCard/Margin/Layout" unique_id=1581287219]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="TitleMandarin" type="Label" parent="TitleCard/Margin/Layout" unique_id=583539199]
+unique_name_in_owner = true
+layout_mode = 2
+text = "MANDARIN"
+horizontal_alignment = 1
+
+[node name="TitleConquest" type="Label" parent="TitleCard/Margin/Layout" unique_id=1447706558]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Conquest"
+horizontal_alignment = 1
+
+[node name="MidSpacer" type="Control" parent="TitleCard/Margin/Layout" unique_id=1811162932]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="ClickToStart" type="Label" parent="TitleCard/Margin/Layout" unique_id=690899533]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Click anywhere
+TO START"
+horizontal_alignment = 1
+
+[node name="BottomSpacer" type="Control" parent="TitleCard/Margin/Layout" unique_id=283752344]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="AuthScreen" type="Control" parent="." unique_id=633926804]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="AuthScreen" unique_id=305820513]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="Layout" type="VBoxContainer" parent="AuthScreen/Margin" unique_id=369811789]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="AuthTitleMandarin" type="Label" parent="AuthScreen/Margin/Layout" unique_id=1919995336]
+unique_name_in_owner = true
+layout_mode = 2
+text = "MANDARIN"
+horizontal_alignment = 1
+
+[node name="AuthTitleConquest" type="Label" parent="AuthScreen/Margin/Layout" unique_id=76843483]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Conquest"
+horizontal_alignment = 1
+
+[node name="AuthSubtitle" type="Label" parent="AuthScreen/Margin/Layout" unique_id=2074611249]
+unique_name_in_owner = true
+layout_mode = 2
+text = "A SIMPLE MANDARIN VOCABULARY GAME"
+horizontal_alignment = 1
+
+[node name="TitleGap" type="Control" parent="AuthScreen/Margin/Layout" unique_id=280591720]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+
+[node name="AuthPanel" type="ColorRect" parent="AuthScreen/Margin/Layout" unique_id=500284657]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FormMargin" type="MarginContainer" parent="AuthScreen/Margin/Layout/AuthPanel" unique_id=1748816794]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Form" type="VBoxContainer" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin" unique_id=2126408108]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="EmailLabel" type="Label" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form" unique_id=2135601569]
+layout_mode = 2
+text = "Email:"
+
+[node name="EmailField" type="LineEdit" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form" unique_id=1695778363]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "you@email.com"
+
+[node name="UsernameRow" type="VBoxContainer" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form" unique_id=1548012337]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="UsernameLabel" type="Label" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form/UsernameRow" unique_id=1473246622]
+layout_mode = 2
+text = "Username:"
+
+[node name="UsernameField" type="LineEdit" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form/UsernameRow" unique_id=2146468124]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Your name"
+
+[node name="PasswordLabel" type="Label" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form" unique_id=161615946]
+layout_mode = 2
+text = "Password:"
+
+[node name="PasswordField" type="LineEdit" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form" unique_id=314476102]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Password"
+secret = true
+
+[node name="AuthStatusLabel" type="Label" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form" unique_id=2130034005]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="AuthPrimaryButton" type="Button" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form" unique_id=1832944710]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Sign Up"
+
+[node name="GuestButton" type="Button" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form" unique_id=75499065]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Continue as Guest"
+
+[node name="SwitchRow" type="HBoxContainer" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form" unique_id=1951158578]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="AuthSwitchHint" type="Label" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form/SwitchRow" unique_id=1852347527]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Already have an account?"
+
+[node name="AuthSwitchButton" type="Button" parent="AuthScreen/Margin/Layout/AuthPanel/FormMargin/Form/SwitchRow" unique_id=949447665]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Sign In"
+flat = true
+
+[node name="WelcomeScreen" type="Control" parent="." unique_id=409224808]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Center" type="CenterContainer" parent="WelcomeScreen" unique_id=88508338]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WelcomeCopy" type="VBoxContainer" parent="WelcomeScreen/Center" unique_id=1746233774]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="WelcomeTitle" type="Label" parent="WelcomeScreen/Center/WelcomeCopy" unique_id=1509722052]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Welcome"
+horizontal_alignment = 1
+
+[node name="WelcomeSubtitle" type="Label" parent="WelcomeScreen/Center/WelcomeCopy" unique_id=1643084215]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Loading your home screen..."
+horizontal_alignment = 1
+
+[node name="AppShell" type="Control" parent="." unique_id=1876101469]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HeaderBar" type="ColorRect" parent="AppShell" unique_id=1442275844]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 168.0
+grow_horizontal = 2
+color = Color(0.960784, 0.827451, 0.239216, 1)
+
+[node name="HeaderMargin" type="MarginContainer" parent="AppShell/HeaderBar" unique_id=549295462]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="HeaderRow" type="HBoxContainer" parent="AppShell/HeaderBar/HeaderMargin" unique_id=439708187]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TitleBlock" type="VBoxContainer" parent="AppShell/HeaderBar/HeaderMargin/HeaderRow" unique_id=1424372691]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = -4
+alignment = 1
+
+[node name="HeaderMandarin" type="Label" parent="AppShell/HeaderBar/HeaderMargin/HeaderRow/TitleBlock" unique_id=1923691354]
+unique_name_in_owner = true
+layout_mode = 2
+text = "MANDARIN"
+
+[node name="HeaderConquest" type="Label" parent="AppShell/HeaderBar/HeaderMargin/HeaderRow/TitleBlock" unique_id=1707397844]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Conquest"
+
+[node name="ContentHost" type="Control" parent="AppShell" unique_id=828674155]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 168.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenusPage" type="Control" parent="AppShell/ContentHost" unique_id=124672760]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LeaderboardsBlock" type="VBoxContainer" parent="AppShell/ContentHost/MenusPage" unique_id=560285998]
+layout_mode = 0
+offset_left = 597.0
+offset_top = -148.0
+offset_right = 704.0
+offset_bottom = -12.0
+theme_override_constants/separation = 2
+alignment = 1
+
+[node name="LeaderboardsButton" type="Button" parent="AppShell/ContentHost/MenusPage/LeaderboardsBlock" unique_id=745093447]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(88, 72)
+layout_mode = 2
+text = "Trophy"
+
+[node name="LeaderboardsCaption" type="Label" parent="AppShell/ContentHost/MenusPage/LeaderboardsBlock" unique_id=208712242]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Leaderboards"
+horizontal_alignment = 1
+
+[node name="MenusMargin" type="MarginContainer" parent="AppShell/ContentHost/MenusPage" unique_id=2013507679]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 16
+
+[node name="MenusCard" type="ColorRect" parent="AppShell/ContentHost/MenusPage/MenusMargin" unique_id=2098187529]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(1, 0.972549, 0.909804, 1)
+
+[node name="MenusInner" type="MarginContainer" parent="AppShell/ContentHost/MenusPage/MenusMargin/MenusCard" unique_id=128465347]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="MenusScroll" type="ScrollContainer" parent="AppShell/ContentHost/MenusPage/MenusMargin/MenusCard/MenusInner" unique_id=1953449275]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="MenusList" type="VBoxContainer" parent="AppShell/ContentHost/MenusPage/MenusMargin/MenusCard/MenusInner/MenusScroll" unique_id=576375365]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 18
+
+[node name="MenusHeading" type="Label" parent="AppShell/ContentHost/MenusPage/MenusMargin/MenusCard/MenusInner/MenusScroll/MenusList" unique_id=1653408539]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "Menus"
+
+[node name="MusicVolumeLabel" type="Label" parent="AppShell/ContentHost/MenusPage/MenusMargin/MenusCard/MenusInner/MenusScroll/MenusList" unique_id=439499084]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Music Volume"
+
+[node name="MusicVolumeSlider" type="HSlider" parent="AppShell/ContentHost/MenusPage/MenusMargin/MenusCard/MenusInner/MenusScroll/MenusList" unique_id=650055022]
+unique_name_in_owner = true
+layout_mode = 2
+value = 70.0
+
+[node name="SfxVolumeLabel" type="Label" parent="AppShell/ContentHost/MenusPage/MenusMargin/MenusCard/MenusInner/MenusScroll/MenusList" unique_id=1631973565]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "SFX Volume"
+
+[node name="SfxVolumeSlider" type="HSlider" parent="AppShell/ContentHost/MenusPage/MenusMargin/MenusCard/MenusInner/MenusScroll/MenusList" unique_id=283882848]
+unique_name_in_owner = true
+layout_mode = 2
+value = 70.0
+
+[node name="QuitButton" type="Button" parent="AppShell/ContentHost/MenusPage/MenusMargin/MenusCard/MenusInner/MenusScroll/MenusList" unique_id=945594607]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit"
+
+[node name="PlayPage" type="Control" parent="AppShell/ContentHost" unique_id=611591086]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayMargin" type="MarginContainer" parent="AppShell/ContentHost/PlayPage" unique_id=694927352]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 16
+
+[node name="PlayCard" type="ColorRect" parent="AppShell/ContentHost/PlayPage/PlayMargin" unique_id=326096394]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(1, 0.972549, 0.909804, 1)
+
+[node name="PlayInner" type="MarginContainer" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard" unique_id=460905316]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="PlayScroll" type="ScrollContainer" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner" unique_id=1175042195]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="PlayList" type="VBoxContainer" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll" unique_id=127687997]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="PlayHeading" type="Label" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList" unique_id=1448206914]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Select a topic"
+
+[node name="TopicPicker" type="VBoxContainer" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList" unique_id=1924383695]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TopicHint" type="Label" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/TopicPicker" unique_id=87068969]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Choose a topic to begin"
+
+[node name="TopicGrid" type="GridContainer" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/TopicPicker" unique_id=617949992]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 14
+theme_override_constants/v_separation = 14
+columns = 2
+
+[node name="QuizPanel" type="VBoxContainer" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList" unique_id=1304157703]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="QuestionProgress" type="Label" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel" unique_id=421]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Question 1 of 10     Score: 0"
+horizontal_alignment = 1
+
+[node name="QuestionInstruction" type="Label" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel" unique_id=422]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Choose the correct English meaning"
+horizontal_alignment = 1
+
+[node name="QuestionMandarin" type="Label" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel" unique_id=423]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 56
+text = "你好"
+horizontal_alignment = 1
+
+[node name="QuestionPrompt" type="Label" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel" unique_id=424]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.117647, 0.419608, 0.345098, 1)
+theme_override_font_sizes/font_size = 28
+text = "nǐ hǎo"
+horizontal_alignment = 1
+
+[node name="AnswerButtons" type="GridContainer" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel" unique_id=425]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="Answer1" type="Button" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel/AnswerButtons" unique_id=426]
+layout_mode = 2
+text = "Choice 1"
+
+[node name="Answer2" type="Button" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel/AnswerButtons" unique_id=427]
+layout_mode = 2
+text = "Choice 2"
+
+[node name="Answer3" type="Button" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel/AnswerButtons" unique_id=428]
+layout_mode = 2
+text = "Choice 3"
+
+[node name="Answer4" type="Button" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel/AnswerButtons" unique_id=429]
+layout_mode = 2
+text = "Choice 4"
+
+[node name="AnswerFeedback" type="Label" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel" unique_id=430]
+unique_name_in_owner = true
+layout_mode = 2
+text = ""
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="NextQuestionButton" type="Button" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel" unique_id=431]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+text = "Next Question"
+
+[node name="BackToTopicsButton" type="Button" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/QuizPanel" unique_id=432]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back to Topics"
+
+[node name="RoundCompletePanel" type="VBoxContainer" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList" unique_id=433]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="RoundCompleteHeading" type="Label" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/RoundCompletePanel" unique_id=434]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Round Complete!"
+horizontal_alignment = 1
+
+[node name="RoundResult" type="Label" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/RoundCompletePanel" unique_id=435]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "You scored 0 out of 0"
+horizontal_alignment = 1
+
+[node name="RoundMessage" type="Label" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/RoundCompletePanel" unique_id=436]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Keep practising!"
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="RoundAgainButton" type="Button" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/RoundCompletePanel" unique_id=437]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Play Again"
+
+[node name="RoundTopicsButton" type="Button" parent="AppShell/ContentHost/PlayPage/PlayMargin/PlayCard/PlayInner/PlayScroll/PlayList/RoundCompletePanel" unique_id=438]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Choose Another Topic"
+
+[node name="ProfilePage" type="Control" parent="AppShell/ContentHost" unique_id=65595131]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ProfileMargin" type="MarginContainer" parent="AppShell/ContentHost/ProfilePage" unique_id=2097573385]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 16
+
+[node name="ProfileCard" type="ColorRect" parent="AppShell/ContentHost/ProfilePage/ProfileMargin" unique_id=556598742]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(1, 0.972549, 0.909804, 1)
+
+[node name="ProfileInner" type="MarginContainer" parent="AppShell/ContentHost/ProfilePage/ProfileMargin/ProfileCard" unique_id=519961442]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 28
+
+[node name="ProfileList" type="VBoxContainer" parent="AppShell/ContentHost/ProfilePage/ProfileMargin/ProfileCard/ProfileInner" unique_id=1502676916]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="ProfileHeading" type="Label" parent="AppShell/ContentHost/ProfilePage/ProfileMargin/ProfileCard/ProfileInner/ProfileList" unique_id=14574631]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "Player Profile"
+horizontal_alignment = 1
+
+[node name="Avatar" type="ColorRect" parent="AppShell/ContentHost/ProfilePage/ProfileMargin/ProfileCard/ProfileInner/ProfileList" unique_id=1436138162]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(0.180392, 0.607843, 0.690196, 1)
+
+[node name="ProfileNameLabel" type="Label" parent="AppShell/ContentHost/ProfilePage/ProfileMargin/ProfileCard/ProfileInner/ProfileList" unique_id=39206345]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "Guest"
+horizontal_alignment = 1
+
+[node name="ProfileRoleLabel" type="Label" parent="AppShell/ContentHost/ProfilePage/ProfileMargin/ProfileCard/ProfileInner/ProfileList" unique_id=82736035]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Guest player"
+horizontal_alignment = 1
+
+[node name="ProfileHint" type="Label" parent="AppShell/ContentHost/ProfilePage/ProfileMargin/ProfileCard/ProfileInner/ProfileList" unique_id=1749295990]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Stats and avatars can go here later. Sign out to test the title and account screens again."
+autowrap_mode = 2
+
+[node name="SignOutButton" type="Button" parent="AppShell/ContentHost/ProfilePage/ProfileMargin/ProfileCard/ProfileInner/ProfileList" unique_id=797902433]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Sign Out"
+
+[node name="LeaderboardsPage" type="Control" parent="AppShell/ContentHost" unique_id=1238525627]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BoardMargin" type="MarginContainer" parent="AppShell/ContentHost/LeaderboardsPage" unique_id=2022531941]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 16
+
+[node name="LeaderboardsCard" type="ColorRect" parent="AppShell/ContentHost/LeaderboardsPage/BoardMargin" unique_id=847526125]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(1, 0.972549, 0.909804, 1)
+
+[node name="BoardInner" type="MarginContainer" parent="AppShell/ContentHost/LeaderboardsPage/BoardMargin/LeaderboardsCard" unique_id=2049492254]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="BoardList" type="VBoxContainer" parent="AppShell/ContentHost/LeaderboardsPage/BoardMargin/LeaderboardsCard/BoardInner" unique_id=618933034]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="BoardHeading" type="Label" parent="AppShell/ContentHost/LeaderboardsPage/BoardMargin/LeaderboardsCard/BoardInner/BoardList" unique_id=2047196384]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "Leaderboards"
+
+[node name="BoardEmpty" type="Label" parent="AppShell/ContentHost/LeaderboardsPage/BoardMargin/LeaderboardsCard/BoardInner/BoardList" unique_id=1569518970]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "No ranked scores yet. This list can later show class or global ranks without changing the yellow header or the bottom tabs."
+autowrap_mode = 2
+
+[node name="NavBar" type="ColorRect" parent="AppShell" unique_id=443667328]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.956863, 0.815686, 0.247059, 1)
+
+[node name="NavRow" type="HBoxContainer" parent="AppShell/NavBar" unique_id=1341148310]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="NavMenusButton" type="Button" parent="AppShell/NavBar/NavRow" unique_id=1411696696]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Menus"
+
+[node name="PlaySlot" type="Control" parent="AppShell/NavBar/NavRow" unique_id=624313644]
+visible = false
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+
+[node name="NavProfileButton" type="Button" parent="AppShell/NavBar/NavRow" unique_id=338785104]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Player
+Profile"
+
+[node name="NavPlayButton" type="Button" parent="AppShell" unique_id=1431813605]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -55.0
+offset_top = -99.0
+offset_right = 53.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Play"

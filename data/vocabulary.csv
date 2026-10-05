@@ -1,0 +1,65 @@
+UniqueID,Mandarin,Pinyin,English,Category
+vocab_001,你好,nǐ hǎo,Hello,greetings
+vocab_002,我,wǒ,Me,pronouns
+vocab_003,你,nǐ,You,pronouns
+vocab_004,我们,wǒ mén,We,pronouns
+vocab_005,你们,nǐ mén,You all,pronouns
+vocab_006,他们,tā mén,they,pronouns
+vocab_007,谢谢,xiè xiè,Thank you,phrases
+vocab_008,不客气,bù kè qì,You're welcome,phrases
+vocab_009,抱歉,bào qiàn,Sorry,phrases
+vocab_010,没关系,méi guān xì,It doesn't matter,phrases
+vocab_011,好,hǎo,Good ,adjectives
+vocab_012,什么,shén me,What,questions
+vocab_013,名,míng,Name,nouns
+vocab_014,高兴,gāo xīng,Happy,adjectives
+vocab_015,他,tā,He,pronouns
+vocab_016,她,tā,She,pronouns
+vocab_017,学,xué,House,nouns
+vocab_018,再见,zài jiàn,Goodbye,greetings
+vocab_019,朋友,péng yǒu,Friend,nouns
+vocab_020,早上,zǎo shàng,Morning,time
+vocab_021,中午,zhōng wǔ,Noon,time
+vocab_022,晚上好,wǎn shàng hǎo,Good Night,greetings
+vocab_023,早上好,zǎo shàng hǎo,Good Morning,greetings
+vocab_024,中午好,zhōng wǔ hǎo,Good Afternoon ,greetings
+vocab_025,下午好,xià wǔ hǎo,Good Evening,greetings
+vocab_026,晚上,wǎn shàng,Night,time
+vocab_027,下午,xià wǔ,Evening,time
+vocab_028,教师,jiào shī,Teacher,nouns
+vocab_029,男,nán,Male,nouns
+vocab_030,女,nǚ,Female,nouns
+vocab_031,一,yī,One ,numbers
+vocab_032,二,èr,Two,numbers
+vocab_033,三,sān,Three,numbers
+vocab_034,四,sì,Four,numbers
+vocab_035,五,wǔ,Five,numbers
+vocab_036,六,liù,Six,numbers
+vocab_037,七,qī,Seven,numbers
+vocab_038,八,bā,Eight,numbers
+vocab_039,九,jiǔ,Nine,numbers
+vocab_040,十,shí,Ten,numbers
+vocab_041,家,jiā,Family,family
+vocab_042,人,rén,People,nouns
+vocab_043,欢迎,huān yíng,Welcome,greetings
+vocab_044,爸爸,bà bà,Papa,family
+vocab_045,妈妈,mā mā,Mama,family
+vocab_046,姐姐,jiě jiě,Elder Sister,family
+vocab_047,哥哥,gē gē,Elder Brother,family
+vocab_048,弟弟,dì dì,Younger Brother,family
+vocab_049,妹妹,mèi mèi,Younger Sister,family
+vocab_050,学生,xué shēng,Student,nouns
+vocab_051,同学,tóng xué,Classmate,nouns
+vocab_052,漂亮,piāo liàng,Pretty,adjectives
+vocab_053,帅气,shuài qì,Handsome,adjectives
+vocab_054,儿子,ér zǐ,Son,family
+vocab_055,女儿,nǚ ér,Daughter,family
+vocab_056,兄弟姐妹,xiōng dì jiě mèi,Siblings,family
+vocab_057,太太,tài tài,Wife,family
+vocab_058,先生,xiān shēng,Husband,family
+vocab_059,孩子,hái zǐ,Children,family
+vocab_060,家人,jiā rén,Family Members,family
+vocab_061,爷爷,yé yé,Grandfather (Paternal),family
+vocab_062,奶奶,nǎi nǎi,Grandmother (Paternal),family
+vocab_063,外公,wài gōng,Grandfather (Maternal),family
+vocab_064,外婆,wài pó,Grandmother (Maternal),family
